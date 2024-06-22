@@ -1,0 +1,47 @@
+.wrap {
+    padding-top: 120px;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 13px;
+        row-gap: 13px;
+        margin-top: 60px;
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        width: 270px;
+        border: 1px solid #000;
+        &-descr {
+            max-width: 211px;
+            margin-top: 15px;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__sayt {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 30px;
+        padding-top: 120px;
+    }
+    &__pro {
+        width: 350px;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__port {
+        width: 100%;
+        margin-top: 20px;
+        border: 7px solid $main-color;
+        border-radius: 4px;
+    }
+    &__title {
+        position: relative;
+        padding: 3px 0 0 13px;
+        @include before_circle;
+    }
+}

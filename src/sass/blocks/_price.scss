@@ -1,0 +1,93 @@
+.price {
+    padding-top: 60px;
+
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0px 50px 0 75px;
+        display: grid;
+        grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 325px);
+        grid-auto-rows: minmax(45px, auto);
+        justify-content: space-between;
+        row-gap: 15px;
+    }
+
+    &__item {
+        display: grid;
+        position: relative;
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #ffa501;
+            border-radius: 100%;
+            left: -25px;
+            top: 12px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__count,
+    &__type {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+    }
+
+    &__type {
+        grid-column: 1/2;
+    }
+
+    &__count {
+        display: grid;
+        justify-self: end;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+}
+
+// .price {
+//     padding-top: 60px;
+//     &__wrapper {
+//         padding: 45px 50px 0 50px;
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//     }
+//     &__item {
+//         display: flex;
+//         justify-content: space-between;
+//         row-gap: 15px;
+//         &:before {
+//             content: "";
+//             position: absolute;
+//             width: 15px;
+//             height: 15px;
+//             background: #ffa501;
+//             border-radius: 100%;
+//             left: -25px;
+//             top: 22%;
+//             transform: translateY(-50%);
+//         }
+//     }
+//     &__wrap {
+//         position: relative;
+//         width: 370px;
+//         margin-top: 15px;
+//     }
+//     &__descr {
+//         font-size: 12px;
+//         font-weight: 500;
+//         line-height: 18px;
+//     }
+// }
